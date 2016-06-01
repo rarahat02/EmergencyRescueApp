@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rahat_pdm.emergencyrescueandpolicehelperapp.Main2Activity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ব্যাবহারের নিয়ম পড়ুন "
+        android:textSize="19dp"
+        android:id="@+id/manual2"
+        android:onClick="userManual2"
+        android:layout_gravity="center_horizontal"
+        style="@style/button_text"
+        android:background="@drawable/red_button"/>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="123 প্রেস করুন"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:id="@+id/entry"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="লগইন করুন "
+        android:textSize="19dp"
+        android:id="@+id/login"
+        android:onClick="loginMenu"
+        android:layout_gravity="center_horizontal"
+        style="@style/button_text"
+        android:background="@drawable/red_button"/>
+
+
+   </LinearLayout>
+
+</ScrollView>
+

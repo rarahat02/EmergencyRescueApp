@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rahat_pdm.emergencyrescueandpolicehelperapp.Manual">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="
+এই অ্যাপ দিয়ে যা করতে পারবেনঃ
+1. দুর্বৃত্ত আপনাকে আক্রমণ করলে  তাৎক্ষণিক পুলিশ সাহায্য বাটনে ক্লিক করলে  আপনার নিকটস্থ  পুলিশ দ্রুত আপনাকে সাহায্য করবে । "
+        android:id="@+id/textView10" />
+
+    </LinearLayout>
+</ScrollView>
