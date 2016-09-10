@@ -31,7 +31,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
+/*import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.ResultCallback;
@@ -40,21 +40,21 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
-import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.android.gms.location.LocationSettingsStatusCodes;*/
 
 
 public class
 
-        Main2Activity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener, ResultCallback<LocationSettingsResult>
+        Main2Activity extends AppCompatActivity /*implements GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener, ResultCallback<LocationSettingsResult>*/
 {
 
     Button manual2, login;
     EditText et;
 
-    protected GoogleApiClient mGoogleApiClient;
+    /*protected GoogleApiClient mGoogleApiClient;
     protected LocationRequest locationRequest;
-    int REQUEST_CHECK_SETTINGS = 100;
+    int REQUEST_CHECK_SETTINGS = 100;*/
 
 
 
@@ -64,7 +64,7 @@ public class
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
+        /*mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(LocationServices.API)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this).build();
@@ -72,7 +72,7 @@ public class
         locationRequest = LocationRequest.create();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         locationRequest.setInterval(30 * 1000);
-        locationRequest.setFastestInterval(5 * 1000);
+        locationRequest.setFastestInterval(5 * 1000);*/
 
         manual2 = (Button) findViewById(R.id.manual2);
         login = (Button) findViewById(R.id.login);
@@ -111,7 +111,7 @@ public class
         }
     }
 
-    @Override
+   /* @Override
     public void onConnected(@Nullable Bundle bundle)
     {
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
@@ -125,7 +125,7 @@ public class
 
         result.setResultCallback(this);
     }
-
+r
     @Override
     public void onConnectionSuspended(int i) {
 
@@ -191,7 +191,7 @@ public class
             mGoogleApiClient.disconnect();
         }
     }
-
+*/
 
 
 }

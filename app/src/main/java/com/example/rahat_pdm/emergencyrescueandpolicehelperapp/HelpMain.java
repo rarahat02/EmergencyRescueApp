@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
+import android.widget.Toast;
 
 
 import java.io.IOException;
@@ -22,7 +23,8 @@ import java.util.List;
 
 public class
 
-        HelpMain extends AppCompatActivity
+
+HelpMain extends AppCompatActivity
 {
 
     public static final String TAG = "Lattitude";
@@ -82,12 +84,14 @@ public class
 
             String ph = "01967517180";
 
-            SmsManager smsManager = SmsManager.getDefault();
+            showToast(truncatedLatitude.toString() + "  " + truncatedLongitude.toString() + " " + crimeClue.getText().toString());
+
+            /*SmsManager smsManager = SmsManager.getDefault();
 
             Log.d(TAG, "From: " + truncatedLatitude);
 
             smsManager.sendTextMessage(ph, null, truncatedLatitude + "," + truncatedLongitude
-                    + "-", null, null);
+                    + "-", null, null);*/
 
             /*smsManager.sendTextMessage(ph, null, latitude + "," + longitude
                     + "-" + crimeClue.getText().toString(), null, null);*/
@@ -120,11 +124,18 @@ public class
 
             String ph = "01967517180";
 
-            SmsManager smsManager = SmsManager.getDefault();
+            showToast(truncatedLatitude.toString() + truncatedLongitude.toString());
+
+            /*SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(ph, null, truncatedLatitude + "," + truncatedLongitude
-                    + "-", null, null);
+                    + "-", null, null);*/
            // smsManager.sendTextMessage(ph, null, truncatedLatitude + "," + truncatedLongitude, null, null);
             /*smsManager.sendTextMessage(ph, null, latitude + "," + longitude, null, null);*/
         }
+    }
+
+    private void showToast(String str)
+    {
+        Toast.makeText(getApplicationContext(), str , Toast.LENGTH_LONG).show();
     }
 }
